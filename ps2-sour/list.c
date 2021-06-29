@@ -12,7 +12,7 @@
 /*                                     during the backtracking               */
 /* ************************************************************************* */
 
-#include <alloc.h>
+#include <stdlib.h>
 #include "datastruct.h"
 #include "table.h"
 #include "list.h"
@@ -183,5 +183,3 @@ void Update_DisjArcs ()
       }
   }  /* end for ... */
 }
-
-

@@ -5,7 +5,7 @@
 /*                     Calculation of the blocks on the critical path        */
 /* ************************************************************************* */
 
-#include <alloc.h>
+#include <stdlib.h>
 #include "datastruct.h"
 #include "table.h"
 #include "list.h"
@@ -112,6 +112,3 @@ void Compute_Blocks ()
      helpblock = helpblock->next;
   }
 }
-
-
-

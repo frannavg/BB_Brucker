@@ -92,6 +92,3 @@ char *argv[];
   printf("Upper Bound = %4d, SearchTreeNodes = %d\n",UpperBound,SearchTreeNodes);
   return 0;
 }
-
-
-

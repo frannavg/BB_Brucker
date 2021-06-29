@@ -6,7 +6,7 @@
 /* ************************************************************************* */
 
 #include <stdio.h>
-#include <alloc.h>
+#include <stdlib.h>
 #include "datastruct.h"
 #include "table.h"
 #include "init.h"
@@ -45,6 +45,3 @@ void Initialize ()
   for (i = 0; i <= MaxNumOfMachines; ++i)
       OpsOnMachine[i] = NIL;
 }
-
-
-

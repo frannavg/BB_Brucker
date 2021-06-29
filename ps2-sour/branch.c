@@ -6,7 +6,7 @@
 /*                    the search tree node SonNode.                          */ 
 /* ************************************************************************* */
 
-#include <alloc.h>
+#include <stdlib.h>
 #include "datastruct.h"
 #include "table.h"
 #include "list.h"
@@ -189,6 +189,3 @@ void Compute_BranchList ()
     actual_block = actual_block->next;
  }
 }
-
-
-
