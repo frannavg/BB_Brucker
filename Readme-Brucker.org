@@ -1,0 +1,17 @@
+#+TITLE: Brucker's job shop code
+
+* Lab book
+
+** <2016-11-22 Ter> Import of original sources
+
+   - Rename datastru.h: to "datastruct.h"
+   - To compile: `make`
+
+* File format
+
+<#machines> <#jobs>
+for #jobs:
+  <#ops> 
+  for #ops:
+    <time> <machine>
+
