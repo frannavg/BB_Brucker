@@ -1,0 +1,35 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "/usr/bin/gcc",
+            "args": [
+                "-g",
+                "${workspaceFolder}/block.c","${workspaceFolder}/branch.c","${workspaceFolder}/fix.c",
+                "${workspaceFolder}/headtail.c","${workspaceFolder}/heur.c","${workspaceFolder}/init.c",
+                "${workspaceFolder}/list.c","${workspaceFolder}/low.c",
+                "${workspaceFolder}/readdata.c","${workspaceFolder}/select.c","${workspaceFolder}/sort.c",
+                "${workspaceFolder}/stack.c","${workspaceFolder}/table.c", "${workspaceFolder}/main.c",                                
+                "-I",
+                "--std=c11",
+                "-o",
+                "${fileDirname}/main",
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            // Use the standard MS compiler pattern to detect errors, warnings and infos
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}

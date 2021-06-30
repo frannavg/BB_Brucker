@@ -4,7 +4,7 @@
 /*           Procedure Pop:  Delete a search tree node from the stack        */
 /* ************************************************************************* */
 
-#include <alloc.h>
+#include <stdlib.h>
 #include "datastruct.h"
 #include "table.h"
 #include "list.h"
@@ -67,6 +67,3 @@ void Pop ()
   FirstOfStack = FirstOfStack->next;
   free((void *) savestack);
 }
-
-
-
